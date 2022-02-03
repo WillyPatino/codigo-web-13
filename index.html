@@ -1,7 +1,6 @@
 <!-- ESTRUCTURA DE HTML -->
-<!-- Willy Patiño -->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <!-- Va a contener la etiquetas pero el SEO -->
     <meta charset="utf-8" />
@@ -11,11 +10,11 @@
     />
     <meta name="robots" content="" />
     <meta name="googlebot" content="" />
-    <meta name="keywords" content="Willy Patiño, HTML, CSS, JS, CODIGO" />
+    <meta name="keywords" content="LINDER HASSINGER, HTML, CSS, JS, CODIGO" />
     <title>Codigo Front 13</title>
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@WillyBPS" />
+    <meta name="twitter:site" content="@linder3hs" />
     <meta name="twitter:title" content="Mi pagina web" />
     <meta
       name="twitter:description"
@@ -23,119 +22,90 @@
     />
     <meta
       name="twitter:image"
-      content="https://web.facebook.com/photo/?fbid=3617944511605237&set=a.145019852231071"
+      content="https://media-exp1.licdn.com/dms/image/C4E1BAQEfNIXEf_JoKg/company-background_10000/0?e=2159024400&v=beta&t=PhtZQJ8QA5Wy2lQzlfJL166pSeK_i3q2qfkD-xOMCcc"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <!-- esta etiqueta nos permite escribir css dentro de un html -->
 
-<body>
-  <!--Las etiquetas de título h1 - h6-->
+  <body>
+    <!-- Las etiqueta de titulo h1 - h6 -->
+    <div class="contenedor-principal">
+      <h1>Mi portafolio</h1>
+      <p>
+        Hola mi nombre es Linder Hassinger, soy docente en CodiGo, estoy
+        aprendiendo a programar en HTML, CSS y JS.
+      </p>
+      <img
+        src="./imagenes/profile.jpeg"
+        class="imagen-perfil"
+        alt=""
+        width="200"
+      />
+      <p>
+        <a class="btn-github" href="https://github.com/WillyPatino">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt=""
+            width="15"
+          />
+          GitHub
+        </a>
+      </p>
+      <img
+        width="600"
+        src="https://sutilweb.com/wp-content/uploads/2021/08/Lenguajes-de-programacion.jpg"
+        alt=""
+        class="imagen-programador"
+      />
+    </div>
 
-  <h1>Inputs</h1>
-
-  <a href="./semana1/inputs.html">Link para inputs</a>
-
-  <h1>Formularios</h1>
-
-  <a href="./semana1/forms.html">Link a formularios</a>
-
-  <h1>Mi primera pagina web</h1>
-  <h2>Título 2</h2>
-  <h3>Título 3</h3>
-  <h4>Título 4</h4>
-  <h5>Título 5</h5>
-  <h6>Título 6</h6>
-  <!--Párrafos-->
-  <p>
-    Hola mi nombre es Willy, estoy construyendo mi primera página web
-  </p>
-    
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eum iusto pariatur, illum quisquam repellendus
-    molestiae unde sapiente nostrum commodi officiis harum veritatis quas voluptate ipsa fugiat fugit odit qui.
-  </p>
-
-  <!--Etiqueta a bold-->
-  <p>
-    Hola ni nombre es
-    <b>Willy Patiño</b>
-    y soy
-    <strong>Software Develores</strong>
-    <!--Etiqueta cursiva-->
-    <i>naci en Arequipa, Perú</i>
-    <!--Subrayado-->
-  <h4>
-    <u>
-      <i>
-        Mis datos
-      </i>
-    </u>
-  </h4>
-  </p>
-  <!--BR: Es para saltos de línea-->
-  <!--No se debe de usar, ya que no tenemos el control de ello y ya no llo usaremos-->
-  <p>Componentes de una computadora:
-    <br />
-    <!--br no tiene cierre y se aconseja usarla únicamente así <br />-->
-    Monitor
-    <br />
-    Teclado
-    <br />
-    Mouse
-  </p>
-  <b>Lista de cursps</b>
-  <br />
-  <i>Curso de HTML, CSS y JS</i>
-  <!--Para poder citar textos-->
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet laborum accusamus, suscipit officia molestiae
-    hic! Doloremque magnam esse explicabo nostrum vel, ut consectetur hic fugit fuga dolore impedit. Commodi!
-  </p>
-  <blockquote>
-    Texto de un escritor que debe ser citado
-  </blockquote>
-  <!--Hipervínculos-->
-  <a href="https://www.youtube.com/" target="_blank">
-    <!--href es un atributo de la etiqueta "a" en el href se debe de colocar el link donde debemos de ir y target _blank es para abrir en nueva pestaña-->
-    Link a youtube
-  </a>
-  <!--TAREA PARA AHORA-->
-  <!--CREAR 3 PARRAFOSUSANDO p-->
-  <!--CREAR 3 LINKS a google, youtube y su página preferida-->
-
-  <p>
-    <a href="https://www.youtube.com/" target="_blank">
-      Link a Youtube
-    </a>
-  </p>
-  <p>
-    <a href="https://github.com/WillyPatino/" target="_blank">
-      Link a GitHub
-    </a>
-  </p>
-
-  <!--Etiquetas multimedia-->
-  <!--Puedo poner el link en una imagen-->
-  <img src="https://seeklogo.com/images/D/Dragon_Ball_Z-logo-0C7B78BE7E-seeklogo.com.png"
-  width="200" height="200" />
-
-  <!--Imagen local-->
-  <a href="https://www.youtube.com/" target="_blank">
-    <img src="./imagenes/youtube-logo.png" width="200" />
-  </a>
-
-  <!--Videos-->
-  <video controls autoplay muted width="200" height="400">
-    <source src="./videos/video.mp4" />
-  </video>
-
-  <!--Audios-->
-  <audio controls autoplay muted>
-    <source src="./audios/audio.mp3" />
-  </audio>
-
-  <!--iframe-->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/zu0cXXxKrM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</body>
-
+    <!-- Lista en HTML -->
+    <!-- <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ol> -->
+    <section class="contenedor-clases">
+      <div>
+        <ul class="lista-semanas">
+          <li>
+            <h5>Semana 1</h5>
+            <img
+              src="https://freeiconshop.com/wp-content/uploads/edd/folder-open-flat.png"
+              alt="semana1"
+              width="100"
+            />
+          </li>
+          <li>
+            <h5>Semana 2</h5>
+            <img
+              src="https://freeiconshop.com/wp-content/uploads/edd/folder-open-flat.png"
+              alt="semana1"
+              width="100"
+            />
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Temas semana 1</h3>
+        <a class="link-referencia" href="./semana1/inputs.html"
+          >Link para inputs</a
+        >
+        <a class="link-referencia" href="./semana1/form.html"
+          >Link a formularios</a
+        >
+        <a class="link-referencia" href="./semana1/tablas.html"
+          >Link a Tablas</a
+        >
+      </div>
+      <hr class="divisor" />
+      <div>
+        <h3>Temas semana 2</h3>
+        <a class="link-referencia" href="./semana2/index.html"
+          >Introducción a CSS</a
+        >
+      </div>
+    </section>
+  </body>
 </html>
