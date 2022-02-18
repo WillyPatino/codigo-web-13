@@ -9,10 +9,16 @@ body {
 
 .header {
   display: flex;
-  /* flex-start
-    center
-    flex-end */
   justify-content: flex-end;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+.background-header {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg,#0093e9 0%, #93EDC7  51%, #1CD8D2  100%);
+  height: 8vh;
 }
 
 .nav ul {
@@ -26,15 +32,23 @@ body {
 
 .nav ul li a {
   text-decoration: none;
-  color: #000;
-  font-weight: 600;
+  color: white;
+  font-weight: 700;
+}
+.nav ul > li a:hover {
+  color:#0093e9  ;
+  transition: 0.7s;
 }
 
 .banner {
-  height: 80vh;
+  height: 90vh;
+
+  margin-bottom: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -49,15 +63,30 @@ body {
   margin-bottom: 25px;
 }
 
+
+.btn-primary {background-image: linear-gradient(to right, #0093e9 0%, #93EDC7  51%, #1CD8D2  100%)}
 .btn-primary {
-  background-color: #ff6464;
-  color: #fff;
-  border: none;
-  padding: 15px;
-  text-transform: capitalize;
-  font-size: 16px;
-  cursor: pointer;
-}
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 20px #eee;
+   border: none;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-primary:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+  cursor:pointer;
+ }
+
+
 
 .img-profile {
   width: 243px;
@@ -72,6 +101,8 @@ body {
 
 .card {
   display: flex;
+  background: rgb(255,255,255);
+  background: linear-gradient(110deg, rgba(255,255,255,1) 91%, rgba(0,147,233,1) 100%);
 }
 
 .card div img {
@@ -82,9 +113,11 @@ body {
 }
 
 .text-works {
-  font-size: 1em;
+  font-size: 2em;
   margin-bottom: 30px;
   font-weight: 300;
+
+  font-weight: bold;
 }
 
 .container-detail {
@@ -97,7 +130,7 @@ body {
 }
 
 .label-dark {
-  background-color: #142850;
+  background-color: #0093e9;
   color: #fff;
   border-radius: 16px;
   padding: 5px 10px;
@@ -116,6 +149,12 @@ hr {
   margin-bottom: 20px;
 }
 
+.style-hr{
+  margin-top: 0;
+  height: 5px;
+  background:linear-gradient(to right, #0093e9 0%, #93EDC7  51%, #1CD8D2  100%);
+}
+
 .link-portafolio {
   color: #000;
   text-decoration: none;
@@ -123,6 +162,39 @@ hr {
 }
 
 .link-portafolio:hover {
-  color: #ff6464;
+  color: #0093e9;
   text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+footer div a {
+  text-decoration: none;
+}
+
+.foo-img {
+  width: 30px;
+  margin: 10px;
+
+  transition: ease-in-out 300ms;
+}
+
+.foo-img:hover {
+  opacity: 0.4;
+}
+
+.foo-txt {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.background-footer {
+  background-image: linear-gradient( 135deg,#1CD8D2  0%, #93EDC7  51%, #0093e9  100%);
 }
