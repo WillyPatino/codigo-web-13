@@ -169,11 +169,12 @@ hr {
 .link-portafolio {
   color: #000;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.1s;
+
 }
 
 .link-portafolio:hover {
-  color: #0093e9;
+  color: #1cd8d2;
   text-decoration: underline;
 }
 
