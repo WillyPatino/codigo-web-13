@@ -44,5 +44,3 @@ const arrayConvertidoFilter = arrayConvertidoInputs.filter(
   (input) => input.type === "text"
 );
 console.log("arrayConvertidoFilter", arrayConvertidoFilter);
-
-
